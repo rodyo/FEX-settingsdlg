@@ -54,7 +54,7 @@ function [settings, button] = settingsdlg(varargin)
 %     {'This is a checkbox'; 'Check'}, [true true],...
 %     {'Tolerance X';'TolX'}, 1e-6,...
 %     {'Tolerance on Function';'TolFun'}, 1e-6,...
-%     'Algorithm'  , {{'active-set','interior-point'}},...
+%     'Algorithm'  , {'active-set','interior-point'},...
 %     'separator'  , 'Constrained',...    
 %     {'Tolerance on Constraints';'TolCon'}, 1e-6)
 % 
@@ -68,13 +68,16 @@ function [settings, button] = settingsdlg(varargin)
 % E-mail     : oldenhuis@gmail.com    (personal)
 %              oldenhuis@luxspace.lu  (professional)
 % Affiliation: LuxSpace sàrl
-% Licence    : GPL + anything implied by placing it on the FEX
+% Licence    : BSD
 
 
 % Changelog
 %{
+2014/July/07 (Rody Oldenhuis)
+- FIXED: The example in the help section didn't work correctly 
+  (thanks Elco Bakker)
+
 2014/February/14 (Rody Oldenhuis)
-- 
 - Implemented window positioning option as suggested by Terrance Nearey.
   The option is called 'WindowPosition', with valid values equal to those
   of movegui().
