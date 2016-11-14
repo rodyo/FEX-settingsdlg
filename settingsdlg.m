@@ -71,24 +71,8 @@ function [settings, button] = settingsdlg(varargin)
 % Licence    : BSD
 
 
-% Changelog
-%{
-2014/July/07 (Rody Oldenhuis)
-- FIXED: The example in the help section didn't work correctly 
-  (thanks Elco Bakker)
-
-2014/February/14 (Rody Oldenhuis)
-- Implemented window positioning option as suggested by Terrance Nearey.
-  The option is called 'WindowPosition', with valid values equal to those
-  of movegui().
-- Updated contact info, donation link
-- Started changelog
-
-%}
-
-
-% If you find this work useful, please consider a donation:
-% https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6G3S5UYM7HJ3N
+% If you find this work useful, please consider a donation: 
+% https://www.paypal.me/RodyO/3.5
     
     %% Initialize
         
@@ -97,7 +81,7 @@ function [settings, button] = settingsdlg(varargin)
     if verLessThan('MATLAB', '8.6')
         error(nargchk(1, inf, narg, 'struct')); %#ok<NCHKN>
     else
-        narginchk(1, inf);
+        narginchk(m1, inf);
     end
         
     % parse input (+errortrap) 
