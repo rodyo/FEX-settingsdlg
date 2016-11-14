@@ -81,7 +81,7 @@ function [settings, button] = settingsdlg(varargin)
     if verLessThan('MATLAB', '8.6')
         error(nargchk(1, inf, narg, 'struct')); %#ok<NCHKN>
     else
-        narginchk(m1, inf);
+        narginchk(1, inf);
     end
         
     % parse input (+errortrap) 
