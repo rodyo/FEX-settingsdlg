@@ -94,7 +94,11 @@ function [settings, button] = settingsdlg(varargin)
         
     % errortraps
     narg = nargin;
-    error(nargchk(1, inf, narg, 'struct'));
+    if verLessThan('MATLAB', '8.6')
+        error(nargchk(1, inf, narg, 'struct')); %#ok<NCHKN>
+    else
+        narginchk(1, inf);
+    end
         
     % parse input (+errortrap) 
     have_settings = 0;
